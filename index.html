@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Basic Bootstrap</title>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Basic Bootstrap Page</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-b">Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-c">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-d">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="header">
+            <div class="background"></div>
+            <div class="content mx-auto text-center text-light">
+                <h1>Welcome to Acme Web Solutions</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum
+                nisi laboriosam eos saepe asperiores dolorum.</p>
+                <a href="#section-b" class="btn rounded-0 text-light">Read More</a>
+            </div>
+        </header>
+        <main>
+            <section id="section-a">
+                <div class="content mx-auto text-center">
+                    <h2>Web & Application Development</h2>
+                    <p class="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</p>
+                </div>
+            </section>
+            <section id="section-b">
+                <ul class="d-md-flex justify-content-md-around align-content-md-stretch mx-auto text-center">
+                    <li>
+                        <div class="card border-0 rounded-0 h-100">
+                            <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Web Development</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et
+                                quasi velit voluptatum cum maiores exercitationem.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card border-0 rounded-0 h-100">
+                            <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Mobile Applications</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et
+                                quasi velit voluptatum cum maiores exercitationem.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card border-0 rounded-0 h-100">
+                            <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="">
+                            <div class="card-content">
+                                <h3 class="card-title">Tech Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et
+                                quasi velit voluptatum cum maiores exercitationem.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="section-c" class="bg-light">
+                <div class="content mx-auto text-center">
+                    <h2>We handle all of your digital needs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+                </div>
+            </section>
+            <section id="section-d" class="container-fluid d-md-flex px-0 text-center text-light">
+                <div class="w-100 w-md-50 bg-primary">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
+                    <p>contact@acmewebsolutions.test</p>
+                </div>
+                <div class="w-100 w-md-50 bg-dark">
+                    <h2>About Our Company</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
+                </div>
+            </section>
+        </main>
+        <a href="#header" class="go-up">
+            <!-- nie pokazywało mi ikony więc wrzuciłem jak jakiś jaskiniowiec svg path -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+        </a>
+        <footer class="d-md-flex text-center justify-content-md-around text-light">
+            <div>
+                Acme Web Solutions
+            </div>
+            <div>
+                Project By 
+                <a href="http://traversymedia.com" target="_blank">Traversy Media</a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+    </body>
+</html>

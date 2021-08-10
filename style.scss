@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    background: #333;
+    line-height: 1.5;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    padding: 0 1.5em;
+}
+h1,h2,h3,h4,h5{
+    font-weight: bold;
+    margin-bottom:0;
+}
+p{
+    margin:auto;
+    margin-bottom:0;
+    max-width: 880px;
+    padding: 1em 0;
+}
+header{
+    min-height: 450px;
+    .background{
+        position:absolute;
+        z-index: -1;
+        opacity: 0.4;
+        width:100%;
+        min-height: 450px;
+        background: #333 url('https://static.pexels.com/photos/248515/pexels-photo-248515.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        h1{
+            padding-top:100px;
+            font-size: 2em;
+        }
+        a{
+            margin: 0.5em 0;
+            border: 1px solid #666;
+            padding: 1em 2em;
+            background: #333;
+        }
+    }
+}
+main{
+    #section-a{
+        padding-bottom: 2em;
+        background: #eaeaea;
+        color: #333;
+        h2{
+            padding: 1em 0;
+            font-size: 1.5em;
+        }
+    }
+    #section-b{
+        padding: 2em 1em 1em;
+        ul{
+            max-width:880px;
+            padding:0;
+            li{
+                margin-bottom: 1em;
+                .card{
+                    padding:0;
+                    img{
+                        transition: filter 250ms linear;
+                    }
+                    img:hover{
+                        filter:grayscale(100%);
+                    }
+                    .card-content{
+                        padding: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    #section-c{
+        padding: 2em;
+        h2{
+            padding: 1em 0;
+        }
+    }
+    #section-d{
+        div{
+            padding: 2em;
+            h2{
+                padding: 1em 0;
+            }
+        }
+    }
+}
+.go-up{
+    position:fixed;
+    bottom: 50px;
+    right: 5%;
+    z-index:2;
+    svg{
+        width:50px;
+        height: 50px;
+    }
+    svg:hover{
+        filter:brightness(0.85); 
+    }
+}
+footer{
+    padding: 2em;
+    background:#000;
+    div{
+        a, a:visited{
+            color:#2690d4;
+            text-decoration: none;
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    main{
+        #section-a{
+            p{
+                max-width:880px;
+                columns: 2;
+                column-gap: 2em;
+            }
+        }
+        #section-b{
+            ul{
+                .card{
+                    margin-bottom: 1em;
+                    width:31vw;
+                    max-width: 275px;
+                }
+            }
+        }
+    }
+}
